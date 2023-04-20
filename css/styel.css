@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #3686ff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serifc;
+  /* height: 100vh; */
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #ffff;
+  width: 60%;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 10px;
+  padding: 20px 10px;
+}
+
+.quizContainer {
+  /* box-shadow: 0px 0px 51px -29px rgba(66, 68, 90, 1); */
+  width: 50%;
+  height: 50%;
+  flex-grow: 3;
+  /* text-align: center; */
+}
+
+.quizContainer h3 {
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+.quizHeader {
+  /* margin: 20px 10px; */
+  padding: 15px;
+  /* text-align: center; */
+  border: 2px solid #3686ff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 51px -29px rgba(66, 68, 90, 1);
+}
+
+.quizBody {
+  margin: 10px 30px;
+}
+
+.quizBody ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.quizBody ul li {
+  padding: 19px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 18px -12px rgba(66, 68, 90, 1);
+  border-radius: 10px;
+}
+
+.quizBody ul li:hover {
+  background: #e5e7eb;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: #ffff;
+  /* border: 2px solid #3686ff; */
+  border: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serifc;
+  box-shadow: 0px 0px 18px -12px rgba(66, 68, 90, 1);
+}
+
+.quizFooter {
+  margin: 10px 0;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.prev {
+  display: none;
+}
+
+button:hover {
+  background: #e5e7eb;
+}
+
+.timer {
+  padding: 10px 20px;
+  /* text-align: center; */
+  border: 2px solid #3686ff;
+  border-radius: 5px;
+}
+
+.card {
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #e6e6e6;
+  color: #3686ff;
+  font-size: 2.5rem;
+}
+.cardContainer button:hover {
+  background: #3686ff;
+}
